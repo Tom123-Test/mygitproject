@@ -22,7 +22,7 @@ pipeline {
            //sleep 30
            sh "pwd"
            echo "runing master"
-           sh "ps -a"
+           //sh "ps -a"
          }
       }
       stage('Test runing'){
@@ -41,7 +41,7 @@ pipeline {
                if (env.GIT_BRANCH == 'origin/F2048'){
                   echo "${Description}${BranchName}"
                   //sleep 25
-                  sh "ls"
+                  //sh "ls"
                }
             }
          }
